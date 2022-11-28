@@ -52,7 +52,7 @@
     </form>
   </div>
 </template>
- <script>
+<script>
 export default {
   data() {
     return {
@@ -63,7 +63,7 @@ export default {
       email: "",
       hasError: false,
       isDisabled: false,
-      error:""
+      error: ""
     };
   },
 
@@ -71,12 +71,12 @@ export default {
     login() {
       const uri = "/notes/login";
       this.axios.post(uri, this.note).then((res) => {
-         console.log(res);
+        console.log(res);
         this.$router.push({ name: "notes" });
       }).catch(function (error) {
-    // handle error
-    console.log(error);
-  })
+        // handle error
+        console.log(error);
+      })
     },
     clearInputs() {
       this.note = {};
@@ -89,8 +89,6 @@ export default {
   }
 };
 </script>
-
-
 
 <style scoped>
 .body
@@ -126,6 +124,5 @@ form{
   border-style: solid black;
   border-radius: 25% 10%;
 }
-
 
 </style>

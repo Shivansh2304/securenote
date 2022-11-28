@@ -27,8 +27,6 @@
               placeholder="enter email id"
             />
 
-
-
             <label>enter password:</label>
             <input
               type="password"
@@ -108,7 +106,6 @@ export default {
   }
 };
 </script>
-
 
 <style scoped>
 .body

@@ -97,8 +97,8 @@ export default {
       notes: [],
       noteNumber: 0,
       notePlural: "",
-      isloggedin:localStorage.getItem("email")?true:false,
-       email:localStorage.getItem("email")
+      isloggedin: !!localStorage.getItem("email"),
+      email: localStorage.getItem("email")
     };
   },
   created: function () {
@@ -114,7 +114,6 @@ export default {
           this.noteNumber = this.notes.length;
           this.notePlural = this.noteNumber === 1 ? "note" : "notes";
         });
-
     },
 
     deleteNote(id) {
