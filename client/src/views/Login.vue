@@ -1,9 +1,7 @@
 <template >
   <div class="body">
-
-    <div class="head">
+  <div class="head">
       <br> <br /><br /> <h3 >LOGIN</h3>
-
     </div>
     <br />
     <div>
@@ -38,15 +36,23 @@
               Login
             </button>
 
-            <button
+             <!-- <button
+              type="button"
+              class="btn btn-warning mr-4"
+              :disabled="!note.title && !note.body"
+              @click.prevent="clearInputs()"
+            >
+              Clear
+            </button> -->
+            <!-- <button
               type="button"
               class="btn btn-danger"
               @click.prevent="backToNotes()"
             >
               Cancel
-            </button>
+            </button> -->
             &nbsp; &nbsp; &nbsp;
-            <button class="btn btn-warning mr-4">
+            <button class="btn btn-success">
             <router-link to="/signup">Signup</router-link></button>
 </div>
     </form>

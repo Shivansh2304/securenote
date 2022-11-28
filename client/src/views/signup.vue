@@ -5,7 +5,7 @@
     <form  class="form" @submit.prevent="signup">
    <div class="content">
             <label
-              >enter name<br />
+              >Enter Name :<br />
 
             </label>
             <input
@@ -16,7 +16,7 @@
               placeholder="enter name"
             />
             <label
-              >enter email id<br />
+              >Enter Email Id :<br />
 
             </label>
             <input
@@ -27,7 +27,7 @@
               placeholder="enter email id"
             />
 
-            <label>enter password:</label>
+            <label>Enter Password:</label>
             <input
               type="password"
               id="password"
@@ -36,7 +36,7 @@
               v-on:keyup="countdown"
               placeholder="Enter password"
             />
-            <label>confirm password:</label>
+            <label>Confirm Password:</label>
             <input
               type="password"
               id="confirmpassword"
@@ -48,7 +48,7 @@
 
 <br >
             <button class="btn btn-primary mr-4" :disabled="isDisabled">
-              signup
+              Signup
             </button>
             <!-- <button
               type="button"
