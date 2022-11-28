@@ -21,7 +21,7 @@
             </label>
             <input
               id="email"
-              type="option"
+              type="email"
               class="form-control"
               v-model="note.email"
               placeholder="enter email id"

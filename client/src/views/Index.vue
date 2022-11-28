@@ -3,15 +3,16 @@
     <router-link to="/login">Login</router-link>
     <router-link to="/signup">Signup</router-link>
   </div>
-  <div v-else><button>
+  <div v-else><button class="logbut">
     <router-link to="/logout">Logout</router-link></button>
   </div>
 
   <h3 v-if="email">
      Welcome {{email}} <br />
   </h3>
-  <div>
+  <div >
     <div class="d-flex justify-content-center">
+      <div class="bbb" >
       <div class="alert alert-primary border-primary p-2 m-0" role="alert">
         <div class="d-flex justify-content-between">
           <h4 class="alert-heading text-center">
@@ -40,6 +41,7 @@
           }}</span>
           {{ notePlural }}
         </p>
+      </div>
       </div>
     </div>
 
@@ -134,12 +136,22 @@ export default {
 
 <style scoped>
 h3{
-  color:#fae596;
+  color:#f4b41a;
+  text-align: center;
+}
+.bbb{
+  background-color: #f4b41a;
 }
 .ind{
-  background-color:#173e43;
+  background-color:#143d59;
   width: 100vw;
   height:108vh;
   margin: -24px -128px;
 }
+.logbut{
+  margin-left: 1272px;
+  margin-top: 7px;
+  font-weight: bold;
+  border: 2px solid #4d87ad;
+  }
 </style>

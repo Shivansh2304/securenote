@@ -12,7 +12,7 @@
     <form class="form" @submit.prevent="login">
         <div class="content">
             <label
-              >enter email id<br />
+              >Enter Email id:<br />
 
             </label>
             <input
@@ -23,7 +23,7 @@
               placeholder="enter email id"
             />
 <br />
-            <label>enter password:</label>
+            <label>Enter Password:</label>
             <input
               type="password"
               id="body"
@@ -35,7 +35,7 @@
                  <br>
 
             <button class="btn btn-primary mr-4" :disabled="isDisabled">
-              login
+              Login
             </button>
 
             <button
@@ -98,8 +98,7 @@ export default {
   width: 100vw;
   height:108vh;
   font-family:sans-serif;
-  background: -webkit-linear-gradient(to right, #155799, #159957);
-  background: linear-gradient(to right, #155799, #159957);
+ background-color: #344D67;
   color:whitesmoke;
 }
 form{
@@ -107,7 +106,9 @@ form{
     height: 20rem;
     margin: 15px 15px;
     margin: auto;
+
     color:whitesmoke;
+
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(11, 15, 13, 0.582);
