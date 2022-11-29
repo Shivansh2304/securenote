@@ -15,7 +15,7 @@
             </label>
             <input
               id="title"
-              type="option"
+              type="email"
               class="form-control"
               v-model="note.email"
               placeholder="enter email id"
@@ -53,7 +53,7 @@
             </button> -->
             &nbsp; &nbsp; &nbsp;
             <button class="btn btn-success">
-            <router-link to="/signup">Signup</router-link></button>
+            <router-link to="/signup" class="link">Signup</router-link></button>
 </div>
     </form>
   </div>
@@ -81,6 +81,7 @@ export default {
         this.$router.push({ name: "notes" });
       }).catch(function (error) {
         // handle error
+        alert("Something went wrong ");
         console.log(error);
       })
     },
@@ -112,9 +113,7 @@ form{
     height: 20rem;
     margin: 15px 15px;
     margin: auto;
-
     color:whitesmoke;
-
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(11, 15, 13, 0.582);
@@ -130,6 +129,9 @@ form{
   text-align: center;
   border-style: solid black;
   border-radius: 25% 10%;
+}
+.link{
+  color:whitesmoke;
 }
 
 </style>

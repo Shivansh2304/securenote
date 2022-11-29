@@ -66,7 +66,7 @@
               Cancel
             </button> &nbsp; &nbsp; &nbsp;
             <button class="btn btn-warning mr-4">
-            <router-link to="/login">Login</router-link></button>
+            <router-link to="/login" class="lin">Login</router-link></button>
           </div>
     </form>
   </div>
@@ -130,6 +130,9 @@ form{
     background-color: rgba(11, 15, 13, 0.582);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.lin{
+  color:white;
 }
 .content{
 
